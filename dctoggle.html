@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html> 
+<title>jQuery Double Click | Toggle</title>
+<head> 
+	<script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+	</script> 
+	<script> 
+		$(document).ready(function() { 
+			$("button").click(function() { 
+				$("#gfg").toggle(); 
+			}); 
+		}); 
+	</script> 
+	<style> 
+		#gfg { 
+			color: blue; 
+			border: 10px solid black; 
+			width: 200px; 
+			text-align: center; 
+		} 
+	</style> 
+
+
+<body> 
+
+	<div id="gfg">Welcome to CONDIURA ONLINE</div> 
+
+	<button>Click to hide() and show() the above</button> 
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("div").dblclick(function(){
+    $( this ).toggleClass("divClass2");
+  });
+});
+</script>
+ 
+<style> 
+.divClass1
+{
+    padding:10px;
+    text-align:center;
+    background-color:green;
+    border:solid 1px;
+}
+.divClass2
+{
+    padding:10px;
+    text-align:center;
+    background-color:red;
+    border:solid 1px;
+}
+</style>
+</head>
+<body>
+<div class="divClass1">CONDIURA ONLINE</div>
+</body> 
+</html> 
+
